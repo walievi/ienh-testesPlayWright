@@ -11,6 +11,8 @@ test.describe('WooCommerce Adicionar ao carrinho', () => {
 
     await expect(page).toHaveURL(/shop/);
 
+    await page.waitForTimeout(1000);
+
     const firstProduct = page.locator('.product').first();
     await firstProduct.locator('text="Add to cart"').click();
 
@@ -25,6 +27,8 @@ test.describe('WooCommerce Adicionar ao carrinho', () => {
     await page.click('text="Shop"');
 
     await expect(page).toHaveURL(/shop/);
+
+    await page.waitForTimeout(1000);
 
     const firstProduct = page.locator('.product').first();
     await firstProduct.locator('text="Add to cart"').click();
@@ -44,6 +48,8 @@ test.describe('WooCommerce Adicionar ao carrinho', () => {
     await page.click('text="Shop"');
 
     await expect(page).toHaveURL(/shop/);
+
+    await page.waitForTimeout(1000);
 
     const firstProduct = page.locator('.product').first();
     await firstProduct.locator('text="Add to cart"').click();
