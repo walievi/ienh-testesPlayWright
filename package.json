@@ -1,0 +1,12 @@
+{
+  "name": "wordpress-tests",
+  "version": "1.0.0",
+  "description": "Tests for WordPress CMS",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "dependencies": {
+    "@playwright/test": "1.46.1",
+    "dotenv": "^16.0.0"
+  }
+}
